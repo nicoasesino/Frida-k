@@ -112,12 +112,23 @@ ul {
 
 
 @media screen and (max-width: 768px) {
+    
+    .nav-main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
     body {
         width: 100%;
     }
     
     .main-footer .grupo1 {
         height: 500px;
+        display: flex;
+        align-items: center;
+        padding: 0 100px;
     }
+
     
 }
