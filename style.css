@@ -120,6 +120,9 @@ ul {
         align-items: center;
         height: 100px;
     }
+    .nav-main .links a {
+        padding: 10px 10px;
+    }
     
     body {
         width: 100%;
