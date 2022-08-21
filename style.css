@@ -7,13 +7,14 @@
  body {
     background-color: black;
     font-size: 20px;
+    height: 100%;
  }
 
 a{
     text-decoration: none;
     color: white;
 }
-li {
+ul {
     list-style:none;
 }
 
@@ -35,10 +36,13 @@ li {
 
 .nav-main {
     display: flex;
-    justify-content: space-between;
-    margin: 0 300px;
     border-bottom: 2px solid white;
+    position: fixed;
+    top: 0;
+    transition: 0.2s;
+    margin-left: 400px;
 }
+
 .logo {
     width: 50px;
     height: 50px;
@@ -54,12 +58,16 @@ li {
 }
 
 .links a {
-    padding: 20px 20px;
+    padding: 5px 20px;
     display: flex;
 }
 
 .links a:hover {
     border-bottom: 5px solid white;
+}
+
+.nav-menu .links {
+    flex: 1;
 }
 
 .banner1 {
@@ -105,4 +113,12 @@ li {
 
 .main-footer .grupo2 a {
     color: black;
+}
+
+@media screen (max-width: 360px;) {
+    .nav-main {
+        margin-left: 0;
+    }
+}
+    
 }
